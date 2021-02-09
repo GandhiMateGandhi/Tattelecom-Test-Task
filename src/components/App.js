@@ -1,5 +1,5 @@
 import React, {useEffect, useState} from 'react';
-import {BrowserRouter, Route} from 'react-router-dom';
+import {HashRouter, Route} from 'react-router-dom';
 import Header from "./Header";
 import Posts from "./Posts/Posts";
 import AlbumsList from "./Albums/AlbumsList";
@@ -38,7 +38,7 @@ const App = () => {
 
     return (
         <Container className="Container">
-            <BrowserRouter>
+            <HashRouter>
                 <div>
                     <Header/>
                     <Route path="/" exact>
@@ -53,7 +53,7 @@ const App = () => {
                         <AlbumsList albums={albums}/>
                     </Route>
                 </div>
-            </BrowserRouter>
+            </HashRouter>
         </Container>
     );
 }
