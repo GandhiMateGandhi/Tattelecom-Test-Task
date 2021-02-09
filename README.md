@@ -1,2 +1,2 @@
-# This SPA made using fake API data from jsonplaceholder
+## This SPA made using fake API data from jsonplaceholder
 
