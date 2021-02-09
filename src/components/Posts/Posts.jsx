@@ -7,7 +7,7 @@ import PostForm from "./PostForm";
 const Posts = ({ posts, users, setPostsCallBack, getNewPostId }) => {
     const renderPostsList = posts.map(post => {
         return (
-            <Segment key={post.id}>
+            <Segment size='big' key={post.id}>
                 <Item>
                     <Item.Content>
                         <Item>

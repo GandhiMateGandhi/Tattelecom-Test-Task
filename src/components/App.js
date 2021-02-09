@@ -45,8 +45,8 @@ const App = () => {
                         <UsersList users={users}/>
                     </Route>
                     <Route path="/posts">
-                        <Posts posts={posts} users={users} s
-                               etPostsCallBack={setPostsCallBack}
+                        <Posts posts={posts} users={users}
+                               setPostsCallBack={setPostsCallBack}
                                getNewPostId={getNewPostId}/>
                     </Route>
                     <Route path="/albums">

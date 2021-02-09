@@ -5,15 +5,17 @@ import json from "../../api/jsonPlaceholder";
 const Album = ({ albumId }) => {
     const [photos, setPhotos] = useState([]);
 
+    const sliceValue = 20;
+
     useEffect(() => {
         const fetchAlbumPhotos = async () => {
             const albums = await json.get(`/albums/${albumId}/photos`);
-            setPhotos(albums.data.slice(0, 20))
+            setPhotos(albums.data.slice(0, sliceValue))
         };
         fetchAlbumPhotos();
-    }, [])
+    }, [albumId])
 
-    const photosList = photos.map(({ title, url, id, thumbnailUrl }) => {
+    const photosList = photos.map(({ title, id, thumbnailUrl }) => {
         return (
             <Image alt={title} src={thumbnailUrl} key={id}/>
         )

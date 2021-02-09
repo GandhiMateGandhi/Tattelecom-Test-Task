@@ -47,7 +47,7 @@ const PostForm = ({ setPostsCallBack, getNewPostId }) => {
 
     return (
         <Segment>
-            <Form onSubmit={submitHandler}>
+            <Form size='large' onSubmit={submitHandler}>
                 <Form.Field>
                     <Form.Input onChange={userIdChangeHandler}
                                 placeholder='UserID'

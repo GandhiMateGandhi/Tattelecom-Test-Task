@@ -9,13 +9,13 @@ const AlbumsList = ({ albums }) => {
 
     const renderAlbumsList =  albums.map(album => {
         return (
-            <Segment color={colorsVariations[album.userId - 1]} key={album.id}>
-                <Header color='blue' size='large' as='h2' content={album.title}/>
+            <Segment padded color={colorsVariations[album.userId - 1]} key={album.id}>
+                <Header color='blue' size='big' as='h3' content={album.title}/>
 
                 <Popup
                     className="PopupImages"
                     trigger={
-                        <Button icon labelPosition='left' size='large'>
+                        <Button icon labelPosition='left' size='medium'>
                             <Icon name='images'/>
                             Show images
                         </Button>
