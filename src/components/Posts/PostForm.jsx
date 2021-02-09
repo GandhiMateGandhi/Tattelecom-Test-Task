@@ -55,6 +55,7 @@ const PostForm = ({ setPostsCallBack, getNewPostId }) => {
                                 name='userId'
                                 type='number'
                                 value={post.userId}
+                                max={10}
                     />
                     <Form.Input onChange={changeHandler}
                                 placeholder='Title'
