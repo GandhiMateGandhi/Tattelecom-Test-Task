@@ -3,7 +3,7 @@ import {Menu} from 'semantic-ui-react'
 import {Link} from "react-router-dom";
 
 const Header = () => {
-    const path = window.location.pathname.replace(/\//, '');
+    const path = document.location.hash.replace(/#\//, '');
 
     const [active, setActive] = useState(path || 'users');
 

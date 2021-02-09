@@ -10,7 +10,7 @@ const AlbumsList = ({ albums }) => {
     const renderAlbumsList =  albums.map(album => {
         return (
             <Segment padded color={colorsVariations[album.userId - 1]} key={album.id}>
-                <Header color='blue' size='big' as='h3' content={album.title}/>
+                <Header color='blue' size='medium' as='h2' content={album.title}/>
 
                 <Popup
                     className="PopupImages"
