@@ -42,7 +42,6 @@ const PostForm = ({ setPostsCallBack, getNewPostId }) => {
             },
         });
         response.status === 201 ? setPostsCallBack(post) : alert('Something went wrong')
-        console.log(post)
     }
 
     return (
